@@ -1,8 +1,5 @@
 import { createBrowserRouter, Routes, Route, Link, NavLink, createRoutesFromElements, RouterProvider } from 'react-router-dom';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import './css/main.css';
 import Home from './pages/Home';
 import DashboardLayout from './layouts/DashboardLayout';
 
