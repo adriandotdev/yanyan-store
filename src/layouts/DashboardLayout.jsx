@@ -1,19 +1,16 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar';
+import Header from '../components/Header';
+import { Outlet } from 'react-router-dom';
 
 function DashboardLayout() {
   return (
-    <main className='container my-4 dashboard'>
-        <div className="row bg-primary gy-1">
-            <div className="col">
-                <h1>Hello</h1>
-            </div>
-        </div>
-
-        <div className="row gap-2 mt-3">
+    <main className='container pt-4 dashboard'>
+        <Header />
+        <div className="row gap-2 mt-3 dashboard--content">
             <Sidebar />
-            <div className="col bg-info">
-                <h1>Main Content</h1>
+            <div className="col border-2 border-primary border rounded dashboard--content-data">
+                <Outlet />
             </div>
         </div>
     </main>
