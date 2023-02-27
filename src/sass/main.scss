@@ -3,12 +3,8 @@
 $primary: #2A5394;
 $light: #EDF2FA;
 
-body {
-    // overflow-y: hidden;
-}
-
+// The actual height of the dashboard container.
 .dashboard {
-    // background: blue;
     height: 100vh;
 }
 
@@ -16,6 +12,7 @@ body {
 
     // background: green;
     height: calc(100% - 80px);
+
     .dashboard--content-data {
         // background: green;
         height: 100%;
@@ -23,9 +20,9 @@ body {
     }
 }
 
+// Form section of the route
 .form--section {
 
-    max-width: 22.9375rem;
     width: 100%;
 
     padding-top: 0.6875rem;
@@ -40,4 +37,25 @@ body {
         margin-top: 1.5rem;
     }
 }
+
+// Navlink active design
+.dashboard-item.active .item {
+    background-color: $light;
+    border-left: 5px solid $primary;
+}
+
+@media only screen and (min-width: 960px) {
+
+    .dashboard-header {
+        border-radius: 5px;
+    }
+    .form--section {
+        max-width: 22.9375rem;
+    }
+
+    .dashboard--content-data {
+        border: 1px solid $light; 
+    }
+}
+
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
