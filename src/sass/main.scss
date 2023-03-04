@@ -2,6 +2,18 @@
 
 $primary: #2A5394;
 $light: #EDF2FA;
+$dark: #070E19;
+$input-focus-box-shadow: red;
+
+@import '../../node_modules//bootstrap/scss/functions.scss';
+@import '../../node_modules/bootstrap/scss/variables.scss';
+
+$customThemeColors: (
+    "accent": #F3E7D4,
+    "dark-secondary": #122440
+);
+
+$theme-colors: map_merge($customThemeColors, $theme-colors);
 
 // The actual height of the dashboard container.
 .dashboard {
@@ -44,17 +56,23 @@ $light: #EDF2FA;
     border-left: 5px solid $primary;
 }
 
+.dashboard-item-dark.active .item {
+    background-color: #122440;
+    border-left: 5px solid #F3E7D4;
+}
+
 @media only screen and (min-width: 960px) {
 
     .dashboard-header {
         border-radius: 5px;
     }
+
     .form--section {
         max-width: 22.9375rem;
     }
 
     .dashboard--content-data {
-        border: 1px solid $light; 
+        border: 1px solid $light;
     }
 }
 

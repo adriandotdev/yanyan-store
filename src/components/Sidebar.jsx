@@ -8,8 +8,11 @@ function Sidebar() {
 
   const context = useContext(UtilityContext);
   
-  document.body.style.background = '#122440';
-  
+  if (context.nightMode)
+    document.body.style.background = '#122440';
+  else 
+    document.body.style.background = '#fff';
+    
   return (
     <div className={`d-none d-lg-block col-3 rounded border px-0 border-light ${context.nightMode && 'bg-dark'}`}>
         <h1 className={`h3 fw-bold text-primary my-4 px-3 ${context.nightMode && 'text-light'}`}>Dashboard</h1>
