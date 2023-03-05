@@ -1,18 +1,21 @@
 import { useContext } from 'react'
 
-// Context
 import { UtilityContext } from '../contexts/UtilityContext';
 
-function InputField({ type, id, label, placeholder }) {
+function Select({ id, label, options }) {
 
     const { nightMode } = useContext(UtilityContext);
 
     return (
         <section className='form--section'>
             <label for={id} className={`form-label ${nightMode ? 'text-light' : 'text-primary'}`}>{label}</label>
-            <input type={type} className='form-control' id={id} placeholder={placeholder} />
+            <select className="form-select" id={id} aria-label={label}>
+                {
+                    options.map(option => <option value={option}>{option}</option>)
+                }
+            </select>
         </section>
     )
 }
 
-export default InputField
+export default Select

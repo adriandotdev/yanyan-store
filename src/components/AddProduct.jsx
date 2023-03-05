@@ -1,4 +1,10 @@
-import { useContext } from 'react'
+import { useContext } from 'react';
+
+// Component
+import InputField from './InputField';
+import Select from './Select';
+
+// Context
 import { UtilityContext } from '../contexts/UtilityContext';
 
 function AddProduct() {
@@ -14,29 +20,13 @@ function AddProduct() {
 
             <form className='add-prod-form' action="">
 
-                <section className='form--section'>
-                    <label for="category" className={`form-label ${nightMode ? 'text-light' : 'text-primary'}`}>Category</label>
-                    <select className="form-select" id='category' aria-label="Product category">
-                        <option value="1">Beverage</option>
-                        <option value="2">Condiments</option>
-                        <option value="3">Dairy Product</option>
-                    </select>
-                </section>
+                <Select id="category" label="Product Category" options={['Beverage', 'Condiments']} />
 
-                <section className='form--section'>
-                    <label for="product-name" className={`form-label ${nightMode ? 'text-light' : 'text-primary'}`}>Product Name</label>
-                    <input type='text' className='form-control' id='product-name' />
-                </section>
+                <InputField id="product-name" type="text" label="Product Name" placeholder="Enter product name" />
 
-                <section className='form--section'>
-                    <label for="price" className={`form-label ${nightMode ? 'text-light' : 'text-primary'}`}>Price</label>
-                    <input type='text' className='form-control' id='price' />
-                </section>
+                <InputField id="price" type="text" label="Price" placeholder="Enter product price" />
 
-                <section className='form--section'>
-                    <label for="quantity" className={`form-label ${nightMode ? 'text-light' : 'text-primary'}`}>Quantity</label>
-                    <input type='text' className='form-control' id='quantity' />
-                </section>
+                <InputField id="quantity" type="text" label="Quantity" placeholder="Enter product quantity" />
 
                 <section className='form--section'>
                     <input className="btn btn-primary w-100 fw-bold" type="submit" value="Add" />
