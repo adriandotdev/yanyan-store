@@ -1,4 +1,10 @@
 import { useContext } from 'react';
+
+// Components
+import InputField from './InputField';
+import Select from './Select';
+
+// Contexts
 import { UtilityContext } from '../contexts/UtilityContext';
 
 function AddUser() {
@@ -14,33 +20,15 @@ function AddUser() {
 
             <form className='add-prod-form' action="">
 
-                <section className='form--section'>
-                    <label for="category" className={`form-label ${nightMode ? 'text-light' : 'text-primary'}`}>Role</label>
-                    <select className="form-select" id='category' aria-label="Product category">
-                        <option value="1">Store Owner</option>
-                        <option value="2">Viewer</option>
-                    </select>
-                </section>
+                <Select id="role" label="Role" options={['Store Owner', 'Viewer']} />
 
-                <section className='form--section'>
-                    <label for="name" className={`form-label ${nightMode ? 'text-light' : 'text-primary'}`}>Name</label>
-                    <input type='text' className='form-control' id='name' />
-                </section>
+                <InputField id="name" type="text" label="Name" placeholder="Enter user's name" />
 
-                <section className='form--section'>
-                    <label for="username" className={`form-label ${nightMode ? 'text-light' : 'text-primary'}`}>Username</label>
-                    <input type='text' className='form-control' id='username' />
-                </section>
+                <InputField id="name" type="text" label="Username" placeholder="Enter the username" />
 
-                <section className='form--section'>
-                    <label for="password" className={`form-label ${nightMode ? 'text-light' : 'text-primary'}`}>Password</label>
-                    <input type='text' className='form-control' id='password' />
-                </section>
+                <InputField id="password" type="password" label="Password" placeholder="Enter your password" />
 
-                <section className='form--section'>
-                    <label for="confirm-password" className={`form-label ${nightMode ? 'text-light' : 'text-primary'}`}>Confirm Password</label>
-                    <input type='text' className='form-control' id='confirm-password' />
-                </section>
+                <InputField id="confirm-password" type="password" label="Re-Type Password" placeholder="Confirm your password" />
 
                 <section className='form--section'>
                     <input className="btn btn-primary w-100 fw-bold" type="submit" value="Add" />
