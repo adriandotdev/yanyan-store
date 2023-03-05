@@ -42,7 +42,6 @@ $theme-colors: map_merge($customThemeColors, $theme-colors);
     .form-label {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 600;
-        color: $primary;
     }
 
     input[type="submit"] {
