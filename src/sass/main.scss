@@ -3,13 +3,15 @@
 $primary: #2A5394;
 $light: #EDF2FA;
 $dark: #070E19;
+$accentColor: #F3E7D4;
+$darkSecondary: #122440;
 
 @import '../../node_modules//bootstrap/scss/functions.scss';
 @import '../../node_modules/bootstrap/scss/variables.scss';
 
 $customThemeColors: (
-    "accent": #F3E7D4,
-    "dark-secondary": #122440
+    "accent": $accentColor,
+    "dark-secondary": $darkSecondary
 );
 
 $theme-colors: map_merge($customThemeColors, $theme-colors);
@@ -21,13 +23,12 @@ $theme-colors: map_merge($customThemeColors, $theme-colors);
 
 .dashboard--content {
 
-    // background: green;
-    height: calc(100% - 80px);
+    height: 100%;
 
     .dashboard--content-data {
-        // background: green;
         height: 100%;
         overflow-y: auto;
+        border-radius: 0;
     }
 }
 
@@ -60,7 +61,7 @@ $theme-colors: map_merge($customThemeColors, $theme-colors);
     border-left: 5px solid #F3E7D4;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
 
     .dashboard-header {
         border-radius: 5px;
@@ -70,8 +71,13 @@ $theme-colors: map_merge($customThemeColors, $theme-colors);
         max-width: 22.9375rem;
     }
 
+    .dashboard--content {
+        min-height: auto;
+        height: calc(100% - 80px);
+    }
+
     .dashboard--content-data {
-        border: 1px solid $light;
+        border-radius: .5rem !important;
     }
 }
 
