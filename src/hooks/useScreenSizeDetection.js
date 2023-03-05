@@ -1,24 +1,24 @@
 import { useState, useEffect } from "react";
 
+/**
+ * @description
+ * Determines if screen size is greater than or equal to the specified width.
+ */
 export function useScreenSizeDetection(screenWidth) {
 
     const [isMatch, setMatch] = useState(false);
 
     useEffect(() => {
 
-        window.addEventListener('resize', () => {
+        function resize() {
 
             if (window.innerWidth >= screenWidth) setMatch(true)
             else setMatch(false);
-        });
+        }
+        window.addEventListener('resize', resize);
 
         return () => {
-
-            window.removeEventListener('resize', () => {
-
-                if (screenWidth === window.innerWidth) setMatch(true)
-                else setMatch(false);
-            });
+            window.removeEventListener('resize', resize);
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
