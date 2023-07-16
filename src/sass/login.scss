@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+.login {
+
+    .login-title {
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: bold;
+    }
+
+    .login-content {
+        min-height: 100vh;
+        position: relative;
+
+        form {
+            height: calc(50vh - 35px);
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .login {
+
+        min-height: 100vh;
+
+        .login-content {
+            min-height: 100vh;
+
+            form {
+                height: auto;
+            }
+        }
+    }
+}

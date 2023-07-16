@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Calistoga&family=Montserrat:wght@400;500&family=Secular+One&family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+$primary: #2A5394;
+$light: #EDF2FA;
+$dark: #070E19;
+$accentColor: #F3E7D4;
+$darkSecondary: #122440;
+$darkGradient: rgb(18, 36, 64);
+$primaryLightMode: #F0F8FF;
+
+@import '../../node_modules//bootstrap/scss/functions.scss';
+@import '../../node_modules/bootstrap/scss/variables.scss';
+
+$customThemeColors: (
+    "accent": $accentColor,
+    "dark-secondary": $darkSecondary,
+    "dark-gradient": $darkGradient,
+    "primary-light-mode": $primaryLightMode
+);
+
+$theme-colors: map_merge($customThemeColors, $theme-colors);
+$btn-hover-bg-tint-amount: 5%;
+
+// The actual height of the dashboard container.
+.dashboard {
+    height: 100vh;
+}
+
+.dashboard--content {
+
+    height: 100%;
+
+    .dashboard--content-data {
+        height: 100%;
+        overflow-y: auto;
+        border-radius: 0;
+    }
+}
+
+// Form section of the route
+.form--section {
+
+    width: 100%;
+
+    padding-top: 0.6875rem;
+
+    input[type="submit"] {
+        margin-top: 1.5rem;
+    }
+}
+
+// Navlink active design
+.dashboard-item.active .item {
+    background-color: $light;
+    border-left: 2px solid $primary;
+}
+
+.dashboard-item-dark.active .item {
+    background-color: #122440;
+    border-left: 2px solid #F3E7D4;
+}
+
+.btn-dark-mode,
+.btn-logout {
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-bg-dark {
+    background: rgb(18, 36, 64);
+    background: -moz-radial-gradient(circle, rgba(18, 36, 64, 1) 0%, rgba(6, 21, 44, 1) 57%, rgba(10, 25, 50, 1) 86%);
+    background: -webkit-radial-gradient(circle, rgba(18, 36, 64, 1) 0%, rgba(6, 21, 44, 1) 57%, rgba(10, 25, 50, 1) 86%);
+    background: radial-gradient(circle, rgba(18, 36, 64, 1) 0%, rgba(6, 21, 44, 1) 57%, rgba(10, 25, 50, 1) 86%);
+}
+
+.store-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .dashboard-header {
+        border-radius: 5px;
+    }
+
+    .form--section {
+        max-width: 22.9375rem;
+    }
+
+    .dashboard--content {
+        min-height: auto;
+        height: calc(100% - 80px);
+    }
+
+    .dashboard--content-data {
+        border-radius: .5rem !important;
+    }
+}
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

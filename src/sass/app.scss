@@ -1,0 +1,38 @@
+body {
+    transition: background-color 300ms;
+}
+
+.modal-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .card {
+        width: 100%;
+    }
+
+    z-index: 2000;
+}
+
+.modal-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #171717;
+    opacity: .3;
+}
+
+@media only screen and (min-width: 992px) {
+    .modal-bg {
+
+        .card {
+            max-width: 25rem;
+            width: 100%;
+        }
+    }
+}
