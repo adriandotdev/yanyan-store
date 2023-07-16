@@ -34,7 +34,7 @@ function AddUser() {
 
     const submit = async () => {
 
-        setLoading(false);
+        setLoading(true);
 
         try {
             const response = await axios.post(`${import.meta.env.PROD ? import.meta.env.VITE_PROD_SERVER : import.meta.env.VITE_DEV_SERVER}/users/add`, getValues())
