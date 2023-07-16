@@ -77,7 +77,7 @@ function Sidebar() {
         <hr />
 
         {/* Night Mode */}
-        <div onClick={() => {
+        <div role='button' tabIndex='0' onClick={() => {
           localStorage.setItem("nightMode", !nightMode)
           setNightMode(prev => !prev);
         }} className={`btn-dark-mode py-3 px-2 m-0 row align-items-center item ${nightMode ? 'text-accent' : 'text-dark-secondary'}`}>
