@@ -32,6 +32,7 @@ function LoginPage() {
 
             if (response.status === 200) {
                 // replace: true is for to not have a history for the 'login' route.
+                console.log('LOGGED IN')
                 setLoading(false);
                 setRole(response.data.decodedToken.role);
                 navigate('/dashboard/add-product', { replace: true });

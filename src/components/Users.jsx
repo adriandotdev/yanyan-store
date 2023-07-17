@@ -65,7 +65,7 @@ function Users() {
 
         try {
 
-            const response = await axios.put(`${import.meta.env.PROD ? import.meta.env.VITE_PROD_SERVER : import.meta.env._DEV_SERVER}/api/store/users/status/${id}`, { status }, { withCredentials: true });
+            const response = await axios.put(`${import.meta.env.PROD ? import.meta.env.VITE_PROD_SERVER : import.meta.env.VITE_DEV_SERVER}/api/store/users/status/${id}`, { status }, { withCredentials: true });
 
             if (response.status === 200) {
 
