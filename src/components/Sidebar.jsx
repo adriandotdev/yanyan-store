@@ -80,7 +80,7 @@ function Sidebar() {
         <div role='button' tabIndex='0' onClick={() => {
           localStorage.setItem("nightMode", !nightMode)
           setNightMode(prev => !prev);
-        }} className={`btn-dark-mode py-3 px-2 m-0 row align-items-center item ${nightMode ? 'text-accent' : 'text-dark-secondary'}`}>
+        }} className={`btn-dark-mode py-3 px-0 m-0 row align-items-center item ${nightMode ? 'text-accent' : 'text-dark-secondary'}`}>
           {
             nightMode ? <svg className="col-3" xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 24 24" height="32" viewBox="0 0 24 24" width="32" fill="#EDF2FA"><rect fill="none" height="24" width="24" /><path d="M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36c-0.98,1.37-2.58,2.26-4.4,2.26 c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z" /></svg>
 
@@ -95,7 +95,7 @@ function Sidebar() {
         <NavLink onClick={() => {
           logout();
           navigate('/', { replace: true });
-        }} style={{ textDecoration: 'none' }} className={`btn-logout py-3 px-3 m-0 row align-items-center item ${nightMode ? 'text-accent' : 'text-dark-secondary'}`}>
+        }} style={{ textDecoration: 'none' }} className={`btn-logout py-3 px-1 m-0 row align-items-center item ${nightMode ? 'text-accent' : 'text-dark-secondary'}`}>
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill={`${nightMode ? ICON_DARK_COLOR : ICON_LIGHT_COLOR}`} className="bi bi-box-arrow-right col-3" viewBox="0 0 16 16">
             <path fillRule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
             <path fillRule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
