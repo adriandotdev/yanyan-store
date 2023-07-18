@@ -48,5 +48,15 @@ This is my project to apply what I learned in NodeJS, and ExpressJS. Here, I imp
 
 ![Deleting Product](https://github.com/adriandotdev/yanyan-store/assets/63532775/bfaff868-9b7f-4646-8d9e-dc8812e54bba)
 
+## Add User
 
+![Adding User](https://github.com/adriandotdev/yanyan-store/assets/63532775/efb46b22-8799-407c-87e0-b880f1b1ee66)
+
+## Users
+
+![Users](https://github.com/adriandotdev/yanyan-store/assets/63532775/6c294729-654d-4586-9090-e4650b10b815)
+
+## Viewer Authorization
+
+![Viewer Authorization](https://github.com/adriandotdev/yanyan-store/assets/63532775/1456bc9c-abee-4a02-96e3-3ee8201c0594)
 
