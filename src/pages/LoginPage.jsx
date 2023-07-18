@@ -22,8 +22,9 @@ function LoginPage() {
 
     const [notification, setNotification] = useState({ show: false, error: false, header: '', body: '' });
 
-    const submit = async () => {
+    const submit = async (e) => {
 
+        e.preventDefault();
         setLoading(true);
 
         try {
