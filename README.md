@@ -1,6 +1,8 @@
 # Yan-Yan Store (Client Side)
 
-This is my project to apply what I learned in NodeJS, and ExpressJS. Here, I implemented Authorization, and Authentication using http-cookie. It is still on-going, and planning to add more. 
+![Wallpaper](https://github.com/adriandotdev/yanyan-store/assets/63532775/f7d3d54c-d61d-4049-8263-ce00bfe9d50b)
+
+This is my project to apply what I learned in NodeJS, and ExpressJS. Here, I implemented Authorization, and Authentication using http-cookie. It is still on-going, and planning to add more.
 
 # Technologies Used
 
@@ -23,3 +25,7 @@ This is my project to apply what I learned in NodeJS, and ExpressJS. Here, I imp
 <span>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="5%"/>
 </span>
+
+# Sample Output
+
+## Login
