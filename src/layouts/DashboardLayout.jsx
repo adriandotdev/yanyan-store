@@ -26,7 +26,6 @@ function DashboardLayout() {
 
     if (!response) {
 
-        logout();
         return <Navigate to="/" replace={true} />
     }
 
