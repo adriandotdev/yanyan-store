@@ -19,3 +19,7 @@ This is my project to apply what I learned in NodeJS, and ExpressJS. Here, I imp
 <span>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="5%"/>
 </span>
+
+<span>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="5%"/>
+</span>
