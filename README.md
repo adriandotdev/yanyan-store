@@ -36,3 +36,17 @@ This is my project to apply what I learned in NodeJS, and ExpressJS. Here, I imp
 
 ![Products Overview](https://github.com/adriandotdev/yanyan-store/assets/63532775/61d36f4b-df7f-416c-892c-7080a8ddaf0b)
 
+### Adding Product
+
+![Add Product](https://github.com/adriandotdev/yanyan-store/assets/63532775/fdbcc10e-76af-444a-8ab5-60a28bb23ce8)
+
+### Updating Product
+
+![Editing Product](https://github.com/adriandotdev/yanyan-store/assets/63532775/1291fa2e-c9db-408a-97cf-8654cee5d125)
+
+### Removing Product
+
+![Deleting Product](https://github.com/adriandotdev/yanyan-store/assets/63532775/bfaff868-9b7f-4646-8d9e-dc8812e54bba)
+
+
+
