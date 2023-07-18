@@ -10,7 +10,7 @@ import axios from 'axios';
 
 import { UtilityContext } from '../contexts/UtilityContext';
 
-import { useNavigate, Navigate, useLoaderData } from 'react-router-dom';
+import { useNavigate, Navigate, useLoaderData, redirect } from 'react-router-dom';
 
 function LoginPage() {
 
@@ -120,11 +120,13 @@ export const VerifiedChecker = async () => {
     try {
         const response = await axios.post(`${import.meta.env.PROD ? import.meta.env.VITE_PROD_SERVER : import.meta.env.VITE_DEV_SERVER}/api/user/verify-login`, {}, { withCredentials: true });
 
+        if (response.status === 200) {
+            return redirect("/dashboard/add-product")
+        }
         return response.data;
     }
     catch (error) {
 
-        console.log(error)
         return null;
     }
 }

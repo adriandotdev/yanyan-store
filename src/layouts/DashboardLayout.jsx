@@ -2,7 +2,7 @@
 import { useState, useContext, useEffect } from 'react';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
-import { NavLink, Outlet, useLoaderData, Navigate } from 'react-router-dom';
+import { NavLink, Outlet, useLoaderData, Navigate, redirect } from 'react-router-dom';
 
 import { UtilityContext } from '../contexts/UtilityContext';
 import { useScreenSizeDetection } from '../hooks/useScreenSizeDetection';
