@@ -24,7 +24,6 @@ function LoginPage() {
 
     const submit = async (e) => {
 
-        e.preventDefault();
         setLoading(true);
 
         try {
