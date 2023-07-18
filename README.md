@@ -29,3 +29,10 @@ This is my project to apply what I learned in NodeJS, and ExpressJS. Here, I imp
 # Sample Output
 
 ## Login
+
+![Login Yanyan](https://github.com/adriandotdev/yanyan-store/assets/63532775/33d1b38e-26f3-4b3d-9c58-3658435b681b)
+
+## Products Overview
+
+![Products Overview](https://github.com/adriandotdev/yanyan-store/assets/63532775/61d36f4b-df7f-416c-892c-7080a8ddaf0b)
+
