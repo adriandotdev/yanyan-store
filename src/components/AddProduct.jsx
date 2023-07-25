@@ -78,7 +78,7 @@ export default function AddProduct() {
             if (response.status >= 200) {
 
                 setNotification({ show: true, error: false, message: response.data.message });
-                reset({ product: '', price: '', quantity: '' });
+                reset({ product: '', price: '', quantity: '', description: '' });
                 setLoading(false);
             }
         }
